@@ -1,0 +1,198 @@
+@import "var";
+@import "vendor";
+@import "mixin";
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+font-family: 'Nunito Sans', sans-serif;
+font-weight: 300;
+}
+
+.main_header {
+  width: 100vw;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5))
+  $main-color;
+  
+& .navbar-brand {
+  color: $text-color;
+  animation: music 2s linear infinite;
+  animation-direction: alternate;
+  
+& .fa{
+  font-size: 4rem;
+}
+
+@keyframes music{
+  from{
+    transform: rotate(5deg);
+  }
+  to{
+    transform: rotate(-5deg);
+  }
+}
+
+&:hover {
+  filter: drop-shadow(0 1.5rem 1rem rgba(255,255,255,0.5));
+}
+}
+
+& .nav {
+  text-align: center;
+
+& .nav-item .items{
+  font-size: 1rem;
+  color: $text-color;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+& .nav-link:hover{
+  color: $primary-color;
+}
+}
+
+& .navbar-brand:hover,
+& .navbar-brand:hover > .fa{
+  color: $primary-color;
+}
+
+& .my-btn {
+//  margin-top: 1.5rem;
+  @include mybtn;
+  
+  &:hover{
+    @include hovereffects;
+  }
+}
+
+& .btn-style{
+  padding-left: 2.5rem;
+}
+}
+
+
+a,
+a:hover{
+  text-decoration: none;
+}
+
+.header_hero{
+ width: 100%;
+  height: 100vh;
+  background: $main-color;
+  
+ & .header_hero_text{
+   height: 80vh;
+  // background: black;
+   margin-top: 3rem;
+  @include content-center(flex-start);
+ }
+ 
+ & h2{
+   color: $text-color;
+   font-size: 2.7rem;
+   margin-bottom: 2rem;
+  line-height: 150%;
+   font-weight: 400;
+ }
+ 
+ & span{
+   color: $primary-color;
+   text-transform: capitalize;
+ }
+ 
+ & p{
+   font-size: 1.8rem;
+   color: $text-color;
+   margin-bottom: 3rem;
+ }
+ 
+ & a{
+   @include mybtn;
+   
+  &:hover{
+    @include hovereffects;
+  }
+ }
+ 
+  & #btn-2{
+   margin-left: 3rem;
+   background-color: rgba(255,255,255,0.5);
+    
+ &:hover{
+   @include hovereffects;
+  }
+  }
+ 
+}
+
+@media screen and (max-width: 500px){
+  .navbar-brand{
+    padding-left: 15rem;
+  }
+  
+// .nav-item .items{
+//   padding-left: 2rem;
+//   margin-bottom: 0.5rem;
+// }
+
+// .my-btn{
+//   margin-left: 11rem;
+// }
+  
+ #btn-3{
+  text-align: center;
+  display: flex;
+   justify-content: center;
+  margin-bottom: 3rem;
+  flex-direction: column;
+ // padding-left: 0rem;
+  }
+ #btn-2{
+   padding-left: 3.8rem;
+  padding-right: 2.2rem;
+   }
+}
+
+// ##### About Us Styling ######
+
+.About_header_hero_text{
+  height: 80vh;
+   margin-top: 6rem;
+  
+  h2{
+    font-size: 3.6rem;
+  }
+//  @include content-center(flex-start);
+}
+
+#btn-4{
+  margin-left: 1.2rem;
+  margin-bottom: 1.2rem;
+  background-color: rgba(255,255,255,0.5);
+  
+&:hover{
+  @include hovereffects
+}
+}
+
+@media screen and (max-width: 500px){
+#btn-4{
+text-align: center;
+  display: flex;
+   justify-content: center;
+  margin-bottom: 3rem;
+  flex-direction: column;
+background-color: rgba(255,255,255,0.5);
+margin-bottom: 1.6rem;
+&:hover{
+  @include hovereffects
+}
+}
+}
+
+
+// #### gallery styling

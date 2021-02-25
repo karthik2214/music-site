@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,300&display=swap");
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300; }
+
+.main_header {
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) #0a183d; }
+  .main_header .navbar-brand {
+    color: white;
+    animation: music 2s linear infinite;
+    animation-direction: alternate; }
+    .main_header .navbar-brand .fa {
+      font-size: 4rem; }
+@keyframes music {
+  from {
+    transform: rotate(5deg); }
+  to {
+    transform: rotate(-5deg); } }
+    .main_header .navbar-brand:hover {
+      filter: drop-shadow(0 1.5rem 1rem rgba(255, 255, 255, 0.5)); }
+  .main_header .nav {
+    text-align: center; }
+    .main_header .nav .nav-item .items {
+      font-size: 1rem;
+      color: white;
+      text-transform: uppercase;
+      padding-top: 2rem; }
+    .main_header .nav .nav-link:hover {
+      color: #b71540; }
+  .main_header .navbar-brand:hover, .main_header .navbar-brand:hover > .fa {
+    color: #b71540; }
+  .main_header .my-btn {
+    padding: 0.8rem 2.2rem;
+    background: #b71540;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    box-shadow: 0px 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 4.5rem;
+    outline: none; }
+    .main_header .my-btn:hover {
+      background-color: white;
+      box-shadow: 0px 1.5rem 2rem rgba(255, 255, 157, 0.4);
+      color: #0a183d;
+      transform: translateY(-7px); }
+  .main_header .btn-style {
+    padding-left: 2.5rem; }
+
+a,
+a:hover {
+  text-decoration: none; }
+
+.header_hero {
+  width: 100%;
+  height: 100vh;
+  background: #0a183d; }
+  .header_hero .header_hero_text {
+    height: 80vh;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; }
+  .header_hero h2 {
+    color: white;
+    font-size: 2.7rem;
+    margin-bottom: 2rem;
+    line-height: 150%;
+    font-weight: 400; }
+  .header_hero span {
+    color: #b71540;
+    text-transform: capitalize; }
+  .header_hero p {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 3rem; }
+  .header_hero a {
+    padding: 0.8rem 2.2rem;
+    background: #b71540;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    border: none;
+    box-shadow: 0px 0.8rem 1.5rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    border-radius: 4.5rem;
+    outline: none; }
+    .header_hero a:hover {
+      background-color: white;
+      box-shadow: 0px 1.5rem 2rem rgba(255, 255, 157, 0.4);
+      color: #0a183d;
+      transform: translateY(-7px); }
+  .header_hero #btn-2 {
+    margin-left: 3rem;
+    background-color: rgba(255, 255, 255, 0.5); }
+    .header_hero #btn-2:hover {
+      background-color: white;
+      box-shadow: 0px 1.5rem 2rem rgba(255, 255, 157, 0.4);
+      color: #0a183d;
+      transform: translateY(-7px); }
+
+@media screen and (max-width: 500px) {
+  .navbar-brand {
+    padding-left: 15rem; }
+
+  #btn-3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-direction: column; }
+
+  #btn-2 {
+    padding-left: 3.8rem;
+    padding-right: 2.2rem; } }
+.About_header_hero_text {
+  height: 80vh;
+  margin-top: 6rem; }
+  .About_header_hero_text h2 {
+    font-size: 3.6rem; }
+
+#btn-4 {
+  margin-left: 1.2rem;
+  margin-bottom: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.5); }
+  #btn-4:hover {
+    background-color: white;
+    box-shadow: 0px 1.5rem 2rem rgba(255, 255, 157, 0.4);
+    color: #0a183d;
+    transform: translateY(-7px); }
+
+@media screen and (max-width: 500px) {
+  #btn-4 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 1.6rem; }
+    #btn-4:hover {
+      background-color: white;
+      box-shadow: 0px 1.5rem 2rem rgba(255, 255, 157, 0.4);
+      color: #0a183d;
+      transform: translateY(-7px); } }
+
+/*# sourceMappingURL=main.css.map */
